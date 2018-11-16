@@ -178,20 +178,20 @@ public class FirstTest {
                     5
             );
 
-//            WebElement article_element = waitForElementPresent(
-//                   By.id("org.wikipedia:id/page_list_item_title"),
-//                   "Cannot find article title",
-//                    15
-//
-//            );
+            WebElement article_element = waitForElementPresent(
+                   By.id("org.wikipedia:id/page_list_item_title"),
+                   "Cannot find article title",
+                    15
 
-//          String article_title = article_element.getAttribute("text");
+            );
 
-//           Assert.assertEquals(
-//                   "We see unexpected title!",
-//                    "Java",
-//                    article_title
-//            );
+          String article_title = article_element.getAttribute("text");
+
+           Assert.assertEquals(
+                   "We see unexpected title!",
+                    "Java",
+                    article_title
+            );
 
 
            waitForElementAndClear(
